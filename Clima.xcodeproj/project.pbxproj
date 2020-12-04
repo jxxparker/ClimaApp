@@ -64,7 +64,6 @@
 			children = (
 				ADAA27CD231BC87F00365194 /* README.md */,
 				ADAA27AF231BBFAF00365194 /* Clima */,
-				ADAA27AE231BBFAF00365194 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +73,7 @@
 				ADAA27AD231BBFAF00365194 /* Clima.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		ADAA27AF231BBFAF00365194 /* Clima */ = {
@@ -89,6 +89,7 @@
 				ADAA27BE231BBFB300365194 /* Info.plist */,
 				ADAA27C5231BC02B00365194 /* dark_background.pdf */,
 				ADAA27C4231BC02B00365194 /* light_background.pdf */,
+				ADAA27AE231BBFAF00365194 /* Products */,
 			);
 			path = Clima;
 			sourceTree = "<group>";

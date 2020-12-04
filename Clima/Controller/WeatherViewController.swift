@@ -1,4 +1,5 @@
 import UIKit
+import CoreLocation
 
 class WeatherViewController: UIViewController {
 
@@ -8,9 +9,13 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     
     var weatherManager = WeatherManager()
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.requestWhenInUseAuthorization() //permission for users when app pops up
+        locationManager.requestLocation() //built in fxn
         
         weatherManager.delegate = self
         searchTextField.delegate = self //handles it so it works on keyboard and toggle board
@@ -67,4 +72,9 @@ extension WeatherViewController: WeatherManagerDelegate {
     }
 }
 
+//MARK: - clllocationmanagerdelegate
 
+
+extension  WeatherViewController: CLLocationManagerDelegate {
+    
+}
